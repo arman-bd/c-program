@@ -33,3 +33,4 @@ int main(){
     printf("Total Vowel: %d", v);
     return 0;
 }
+
