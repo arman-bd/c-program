@@ -3,7 +3,6 @@ This program will print a multiplication cross table for 1 to 9.
 */
 
 #include<stdio.h>
-#include<string.h>
 
 int main(){
     int i = 0;
