@@ -14,3 +14,5 @@ This repository contains some basic C problems solutions.
 * Sum of prime numbers in a range. [ <a href="sum-of-prime-number-range.c">code</a> ]
 * Number of vowels in a text. [ <a href="vowels-in-text.c">code</a> ]
 * Increament input by n%. [ <a href="n-percent-increment.c">code</a> ]
+* Multiplication cross-table. [ <a href="multiplication-cross-table.c">code</a> ]
+* Draw triangle with asterisk. [ <a href="triangle-with-asterisk.c">code</a> ]
