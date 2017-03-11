@@ -13,3 +13,4 @@ This repository contains some basic C problems solutions.
 * Find prime numbers in a range. [ <a href="prime-number-range.c">code</a> ]
 * Sum of prime numbers in a range. [ <a href="sum-of-prime-number-range.c">code</a> ]
 * Number of vowels in a text. [ <a href="vowels-in-text.c">code</a> ]
+* Increament input by n%. [ <a href="n-percent-increment.c">code</a> ]
