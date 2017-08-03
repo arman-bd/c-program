@@ -1,51 +1,47 @@
-/*
-This program will check if a number is prime or not.
-*/
-
 #include<stdio.h>
+#include<math.h>
+
+int isPrime(int num);
 
 int main(){
-    // Declare Variables
-    int numbers = 0;
-    int i = 0;
-    int prime = 1;
+    int inp;
 
-    // Get Input
-    printf("Enter An Integer: ");
-    scanf("%d", &numbers);
+    printf("Number: ");
+    scanf("%d", &inp);
 
-    for(i = 0; i < numbers; i++){
+    if(isPrime(inp) == 1){
+        printf("This Number is Prime");
+    }else{
+        printf("This Number is NOT Prime");
+    }
 
-        // This is to avoid division by 0 and 1
-        if(i == 0 || i == 1){
-            continue;
-        }
+    printf("\n");
+    return 0;
+}
 
-        // This is to avoid division by any even number after 2
+int isPrime(int num){
+    int i, prime = 1;
+
+    if(num == 0 || num == 1){
+        prime = 0;
+        return prime;
+    }
+    if(num == 2){
+        prime = 1;
+        return prime;
+    }
+
+    for(i = 2; i < ceil(num / 2) + 1; i++){
+
         if(i > 2 && i % 2 == 0){
-            continue;
+            continue; // Avoid Even Numbers
         }
 
-        // If this number can be divided by
-        // any number greater then 1 and less then that number
-        // then it is not a prime number.
-        if(numbers % i == 0){
+        if(num % i == 0){
             prime = 0;
             break;
         }
     }
 
-    // Print Reversed Number
-    if(prime == 1){
-        printf("%d Is A Prime Number!", numbers);
-    }else{
-        printf("%d Is Not A Prime Number!", numbers);
-    }
-
-    // New Line
-    printf("\n");
-
-    // End Of Program
-    return 0;
+    return prime;
 }
-
