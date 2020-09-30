@@ -1,7 +1,7 @@
-#include<stdio.h>
+#include<stdio.h> // header file
 
 int main(){
-    int inp1, inp2;
+    int inp1, inp2;// //initialization of variable
 
     printf("Enter Integer [x]: ");
     scanf("%d", &inp1);
