@@ -1,7 +1,8 @@
 #include<stdio.h>
 
-int main(){
-    float radius, diameter, circumference, area, pi;
+int main()
+{
+    float radius,circumference,area, pi;
 
     pi = 3.1415926535;
 
@@ -12,17 +13,15 @@ int main(){
 
     // radius = r
     // area = A
-    // diameter = d
     // circumference = C
 
     printf("Enter Radius: ");
     scanf("%f", &radius);
 
-    diameter = 2 * radius;
-    circumference = pi * diameter;
+    circumference = 2*(pi*radius) ;
     area = pi * (radius * radius);
 
-    printf("\nDiameter: %.8f", diameter);
+    printf("\nDiameter: %.8f", radius);
     printf("\nCircumference: %.8f", circumference);
     printf("\nArea: %.8f", area);
 
